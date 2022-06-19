@@ -1,0 +1,80 @@
+[ {
+  "@id" : "_:genid1",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Ontology" ]
+}, {
+  "@id" : "http://www.w3.org/ns/ldp#RDFSource",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://www.w3.org/ns/odrl/2/Policy",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://www.w3.org/ns/odrl/2/action",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://www.w3.org/ns/odrl/2/assigner",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://www.w3.org/ns/odrl/2/constraint",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://www.w3.org/ns/odrl/2/leftOperand",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://www.w3.org/ns/odrl/2/operator",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://www.w3.org/ns/odrl/2/permission",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://www.w3.org/ns/odrl/2/rightOperand",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://www.w3.org/ns/odrl/2/target",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "https://pod.inrupt.com/islamf2/private/odrl_policies/compliance_policy.ttl",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/ns/ldp#RDFSource"
+  } ]
+}, {
+  "@id" : "https://pod.inrupt.com/islamf2/private/odrl_policies/compliance_policy.ttl#permission1",
+  "http://www.w3.org/ns/odrl/2/action" : [ {
+    "@id" : "https://w3id.org/oac/Write"
+  } ],
+  "http://www.w3.org/ns/odrl/2/assigner" : [ {
+    "@id" : "https://pod.inrupt.com/islamf2/profile/card#me"
+  } ],
+  "http://www.w3.org/ns/odrl/2/constraint" : [ {
+    "@id" : "https://pod.inrupt.com/islamf2/private/odrl_policies/compliance_policy.ttl#purposeConstraint"
+  } ],
+  "http://www.w3.org/ns/odrl/2/target" : [ {
+    "@id" : "https://w3id.org/oac/Authenticating"
+  }, {
+    "@id" : "https://w3id.org/oac/Communication"
+  }, {
+    "@id" : "https://w3id.org/oac/DeviceBased"
+  } ]
+}, {
+  "@id" : "https://pod.inrupt.com/islamf2/private/odrl_policies/compliance_policy.ttl#policy1",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/ns/odrl/2/Policy"
+  } ],
+  "http://www.w3.org/ns/odrl/2/permission" : [ {
+    "@id" : "https://pod.inrupt.com/islamf2/private/odrl_policies/compliance_policy.ttl#permission1"
+  } ]
+}, {
+  "@id" : "https://pod.inrupt.com/islamf2/private/odrl_policies/compliance_policy.ttl#purposeConstraint",
+  "http://www.w3.org/ns/odrl/2/leftOperand" : [ {
+    "@id" : "https://w3id.org/oac/Purpose"
+  } ],
+  "http://www.w3.org/ns/odrl/2/operator" : [ {
+    "@id" : "http://www.w3.org/ns/odrl/2/isAnyOf"
+  } ],
+  "http://www.w3.org/ns/odrl/2/rightOperand" : [ {
+    "@id" : "http://www.w3.org/ns/dpv#EnforceSecurity"
+  }, {
+    "@id" : "http://www.w3.org/ns/dpv#LegalCompliance"
+  } ]
+} ]
