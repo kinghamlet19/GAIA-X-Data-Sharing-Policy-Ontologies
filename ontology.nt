@@ -1,0 +1,92 @@
+_:genid1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
+# 
+# 
+# #################################################################
+# #
+# #    Annotation properties
+# #
+# #################################################################
+# 
+# 
+# http://www.w3.org/ns/odrl/2/action
+<http://www.w3.org/ns/odrl/2/action> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://www.w3.org/ns/odrl/2/assigner
+<http://www.w3.org/ns/odrl/2/assigner> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://www.w3.org/ns/odrl/2/constraint
+<http://www.w3.org/ns/odrl/2/constraint> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://www.w3.org/ns/odrl/2/leftOperand
+<http://www.w3.org/ns/odrl/2/leftOperand> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://www.w3.org/ns/odrl/2/operator
+<http://www.w3.org/ns/odrl/2/operator> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://www.w3.org/ns/odrl/2/prohibition
+<http://www.w3.org/ns/odrl/2/prohibition> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://www.w3.org/ns/odrl/2/rightOperand
+<http://www.w3.org/ns/odrl/2/rightOperand> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://www.w3.org/ns/odrl/2/target
+<http://www.w3.org/ns/odrl/2/target> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Classes
+# #
+# #################################################################
+# 
+# 
+# http://www.w3.org/ns/ldp#RDFSource
+<http://www.w3.org/ns/ldp#RDFSource> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://www.w3.org/ns/odrl/2/Policy
+<http://www.w3.org/ns/odrl/2/Policy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Individuals
+# #
+# #################################################################
+# 
+# 
+# https://pod.inrupt.com/islamf2/private/odrl_policies/prohibitedUnauthorised_Device_policy.ttl
+<https://pod.inrupt.com/islamf2/private/odrl_policies/prohibitedUnauthorised_Device_policy.ttl> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://pod.inrupt.com/islamf2/private/odrl_policies/prohibitedUnauthorised_Device_policy.ttl> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/ldp#RDFSource> .
+# 
+# https://pod.inrupt.com/islamf2/private/odrl_policies/prohibitedUnauthorised_Device_policy.ttl#policy1
+<https://pod.inrupt.com/islamf2/private/odrl_policies/prohibitedUnauthorised_Device_policy.ttl#policy1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://pod.inrupt.com/islamf2/private/odrl_policies/prohibitedUnauthorised_Device_policy.ttl#policy1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/odrl/2/Policy> .
+<https://pod.inrupt.com/islamf2/private/odrl_policies/prohibitedUnauthorised_Device_policy.ttl#policy1> <http://www.w3.org/ns/odrl/2/prohibition> <https://pod.inrupt.com/islamf2/private/odrl_policies/prohibitedUnauthorised_Device_policy.ttl#prohibition1> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Annotations
+# #
+# #################################################################
+# 
+# 
+<https://pod.inrupt.com/islamf2/private/odrl_policies/prohibitedUnauthorised_Device_policy.ttl#prohibition1> <http://www.w3.org/ns/odrl/2/action> <https://w3id.org/oac/Append> .
+<https://pod.inrupt.com/islamf2/private/odrl_policies/prohibitedUnauthorised_Device_policy.ttl#prohibition1> <http://www.w3.org/ns/odrl/2/action> <https://w3id.org/oac/Write> .
+<https://pod.inrupt.com/islamf2/private/odrl_policies/prohibitedUnauthorised_Device_policy.ttl#prohibition1> <http://www.w3.org/ns/odrl/2/assigner> <https://pod.inrupt.com/islamf2/profile/card#me> .
+<https://pod.inrupt.com/islamf2/private/odrl_policies/prohibitedUnauthorised_Device_policy.ttl#prohibition1> <http://www.w3.org/ns/odrl/2/constraint> <https://pod.inrupt.com/islamf2/private/odrl_policies/prohibitedUnauthorised_Device_policy.ttl#purposeConstraint> .
+<https://pod.inrupt.com/islamf2/private/odrl_policies/prohibitedUnauthorised_Device_policy.ttl#prohibition1> <http://www.w3.org/ns/odrl/2/target> <https://w3id.org/oac/DeviceBased> .
+<https://pod.inrupt.com/islamf2/private/odrl_policies/prohibitedUnauthorised_Device_policy.ttl#prohibition1> <http://www.w3.org/ns/odrl/2/target> <https://w3id.org/oac/Identifying> .
+# 
+<https://pod.inrupt.com/islamf2/private/odrl_policies/prohibitedUnauthorised_Device_policy.ttl#purposeConstraint> <http://www.w3.org/ns/odrl/2/leftOperand> <https://w3id.org/oac/Purpose> .
+<https://pod.inrupt.com/islamf2/private/odrl_policies/prohibitedUnauthorised_Device_policy.ttl#purposeConstraint> <http://www.w3.org/ns/odrl/2/operator> <http://www.w3.org/ns/odrl/2/isAnyOf> .
+<https://pod.inrupt.com/islamf2/private/odrl_policies/prohibitedUnauthorised_Device_policy.ttl#purposeConstraint> <http://www.w3.org/ns/odrl/2/rightOperand> <http://www.w3.org/ns/dpv#AccountManagement> .
+<https://pod.inrupt.com/islamf2/private/odrl_policies/prohibitedUnauthorised_Device_policy.ttl#purposeConstraint> <http://www.w3.org/ns/odrl/2/rightOperand> <http://www.w3.org/ns/dpv#EnforceSecurity> .
+<https://pod.inrupt.com/islamf2/private/odrl_policies/prohibitedUnauthorised_Device_policy.ttl#purposeConstraint> <http://www.w3.org/ns/odrl/2/rightOperand> <http://www.w3.org/ns/dpv#OrganisationComplianceManagement> .
+<https://pod.inrupt.com/islamf2/private/odrl_policies/prohibitedUnauthorised_Device_policy.ttl#purposeConstraint> <http://www.w3.org/ns/odrl/2/rightOperand> <http://www.w3.org/ns/dpv#OrganisationGovernance> .
+<https://pod.inrupt.com/islamf2/private/odrl_policies/prohibitedUnauthorised_Device_policy.ttl#purposeConstraint> <http://www.w3.org/ns/odrl/2/rightOperand> <http://www.w3.org/ns/dpv#RegistrationAuthentication> .
+# 
+# Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/
